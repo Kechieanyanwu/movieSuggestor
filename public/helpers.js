@@ -1,5 +1,3 @@
-
-
 // Populate dropdown menu with all the available genres
 const populateGenreDropdown = (genres) => {
     const select = document.getElementById('genres')
@@ -34,12 +32,14 @@ const clearCurrentMovie = () => {
 
 // After liking a movie, clears the current movie from the screen and gets another random movie
 const likeMovie = () => {
+    // include movie in liked list
     clearCurrentMovie();
     showRandomMovie();
 };
 
 // After disliking a movie, clears the current movie from the screen and gets another random movie
 const dislikeMovie = () => {
+    // include movie in disliked list
     clearCurrentMovie();
     showRandomMovie();
 };
@@ -86,6 +86,9 @@ const displayMovie = (movieInfo) => {
     const movieTextDiv = document.getElementById('movieText');
     const likeBtn = document.getElementById('likeBtn');
     const dislikeBtn = document.getElementById('dislikeBtn');
+    //todo include for cast
+    //todo include for release date
+    //todo include release type
   
     // Create HTML content containing movie info
     const moviePoster = createMoviePoster(movieInfo.poster_path);
