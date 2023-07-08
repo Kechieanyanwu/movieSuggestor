@@ -1,4 +1,4 @@
-const tmdbKey = '7f637d8c9e9dec001ebce8174a10bc17'; // do not share with API key
+const tmdbKey = ''; // do not share with API key
 const tmdbBaseUrl = 'https://api.themoviedb.org/3';
 const playBtn = document.getElementById('playBtn');
 
